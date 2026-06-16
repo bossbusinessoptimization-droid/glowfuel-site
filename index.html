@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GlowFuel — 30-Day Waist & Glute Plan for Women</title>
+<meta name="description" content="The proven 30-day plan for women who want a tighter waist and stronger glutes. Free plan, expert meal guide, and top Amazon product picks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --blush:#E8A598;--copper:#C17B5E;--charcoal:#2D2D2D;
+  --cream:#F5EDE8;--mocha:#3D2B1F;--light:#FAF3EF;--white:#fff;
+}
+html{-webkit-font-smoothing:antialiased}
+body{font-family:'Lato',sans-serif;color:var(--mocha);background:var(--white)}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.93);backdrop-filter:blur(12px);border-bottom:1px solid rgba(193,123,94,.15);padding:0 5vw;height:60px;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--copper);letter-spacing:-.3px;text-decoration:none}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{font-size:13px;font-weight:600;color:var(--charcoal);text-decoration:none;letter-spacing:.04em;text-transform:uppercase;transition:color .15s}
+.nav-links a:hover{color:var(--copper)}
+.nav-cta{background:var(--copper);color:var(--white);padding:9px 20px;border-radius:30px;font-size:13px;font-weight:700;text-decoration:none;transition:opacity .15s;white-space:nowrap}
+.nav-cta:hover{opacity:.85}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,var(--mocha) 0%,var(--copper) 55%,var(--blush) 100%);min-height:90vh;display:flex;align-items:center;padding:80px 5vw;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;inset:0;background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle cx="150" cy="60" r="80" fill="rgba(255,255,255,.04)"/><circle cx="30" cy="160" r="60" fill="rgba(255,255,255,.03)"/></svg>') center/cover}
+.hero-inner{max-width:620px;position:relative;z-index:1}
+.hero-eyebrow{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blush);margin-bottom:16px}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(38px,6vw,64px);font-weight:700;color:var(--white);line-height:1.06;letter-spacing:-.5px;margin-bottom:20px}
+.hero h1 em{color:var(--blush);font-style:italic}
+.hero-sub{font-size:17px;color:rgba(255,255,255,.82);line-height:1.6;max-width:480px;margin-bottom:32px;font-weight:300}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-primary{background:var(--blush);color:var(--mocha);padding:15px 32px;border-radius:50px;font-size:15px;font-weight:700;text-decoration:none;transition:all .2s;display:inline-block}
+.btn-primary:hover{background:#f0b8ab;transform:translateY(-1px)}
+.btn-ghost{border:2px solid rgba(255,255,255,.4);color:var(--white);padding:15px 28px;border-radius:50px;font-size:15px;font-weight:600;text-decoration:none;transition:all .2s;display:inline-block}
+.btn-ghost:hover{border-color:var(--white);background:rgba(255,255,255,.08)}
+.hero-social-proof{margin-top:40px;display:flex;align-items:center;gap:14px}
+.stars{color:var(--blush);font-size:18px;letter-spacing:2px}
+.proof-text{font-size:13px;color:rgba(255,255,255,.7)}
+.disclosure-bar{background:rgba(0,0,0,.25);padding:10px 5vw;font-size:11px;color:rgba(255,255,255,.6);text-align:center}
+
+/* STATS STRIP */
+.stats{background:var(--cream);padding:48px 5vw;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:32px;text-align:center}
+.stat-num{font-family:'Playfair Display',serif;font-size:42px;font-weight:700;color:var(--copper);line-height:1}
+.stat-label{font-size:13px;color:var(--mocha);margin-top:6px;font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+
+/* SECTION BASE */
+section{padding:72px 5vw}
+.section-inner{max-width:1060px;margin:0 auto}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--copper);margin-bottom:10px}
+h2.section-title{font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,40px);font-weight:700;color:var(--charcoal);margin-bottom:14px;letter-spacing:-.3px;line-height:1.15}
+.section-sub{font-size:16px;color:#6b5a52;line-height:1.6;max-width:560px;margin-bottom:40px}
+
+/* PLAN PREVIEW */
+.plan-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.plan-card{background:var(--white);border:1.5px solid rgba(232,165,152,.3);border-radius:16px;padding:24px;transition:all .2s}
+.plan-card:hover{border-color:var(--blush);transform:translateY(-3px);box-shadow:0 8px 24px rgba(193,123,94,.12)}
+.plan-week{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--copper);margin-bottom:8px}
+.plan-card h3{font-family:'Playfair Display',serif;font-size:18px;color:var(--charcoal);margin-bottom:8px}
+.plan-card p{font-size:13px;color:#7a6058;line-height:1.5}
+.plan-card ul{margin-top:10px;padding-left:16px;font-size:13px;color:#7a6058;line-height:1.8}
+
+/* PRODUCTS */
+.products-section{background:var(--light)}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
+.product-card{background:var(--white);border-radius:16px;padding:22px;border:1.5px solid rgba(0,0,0,.06);transition:all .2s}
+.product-card:hover{border-color:var(--blush);box-shadow:0 6px 20px rgba(193,123,94,.1);transform:translateY(-2px)}
+.product-emoji{font-size:32px;margin-bottom:12px;display:block}
+.product-tag{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--copper);margin-bottom:6px}
+.product-card h3{font-size:15px;font-weight:700;color:var(--charcoal);margin-bottom:6px;line-height:1.3}
+.product-card p{font-size:13px;color:#7a6058;margin-bottom:14px;line-height:1.5}
+.amazon-btn{display:block;background:var(--copper);color:var(--white);text-align:center;padding:10px 16px;border-radius:30px;font-size:13px;font-weight:700;text-decoration:none;transition:opacity .15s}
+.amazon-btn:hover{opacity:.85}
+.amazon-note{font-size:10px;color:#aaa;text-align:center;margin-top:6px}
+
+/* BLOG PREVIEW */
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px}
+.blog-card{background:var(--white);border-radius:16px;overflow:hidden;border:1.5px solid rgba(0,0,0,.06);transition:all .2s}
+.blog-card:hover{box-shadow:0 8px 24px rgba(0,0,0,.08);transform:translateY(-2px)}
+.blog-img{height:160px;background:linear-gradient(135deg,var(--blush),var(--copper));display:flex;align-items:center;justify-content:center;font-size:48px}
+.blog-body{padding:20px}
+.blog-date{font-size:11px;color:var(--copper);font-weight:600;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+.blog-card h3{font-size:15px;font-weight:700;color:var(--charcoal);margin-bottom:8px;line-height:1.4}
+.blog-card p{font-size:13px;color:#7a6058;line-height:1.5;margin-bottom:12px}
+.read-more{font-size:13px;font-weight:700;color:var(--copper);text-decoration:none}
+.read-more:hover{text-decoration:underline}
+
+/* TRACKER CTA */
+.tracker-section{background:linear-gradient(135deg,var(--mocha),var(--copper));text-align:center;padding:80px 5vw}
+.tracker-section h2{font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,40px);color:var(--white);margin-bottom:14px}
+.tracker-section p{font-size:16px;color:rgba(255,255,255,.8);max-width:480px;margin:0 auto 32px;line-height:1.6}
+.tracker-options{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.tracker-btn{padding:14px 28px;border-radius:50px;font-size:14px;font-weight:700;text-decoration:none;transition:all .2s}
+.tracker-btn.pdf{background:var(--blush);color:var(--mocha)}
+.tracker-btn.digital{background:transparent;border:2px solid rgba(255,255,255,.6);color:var(--white)}
+.tracker-btn:hover{opacity:.85;transform:translateY(-1px)}
+.tracker-price{font-size:11px;display:block;margin-top:4px;opacity:.7;font-weight:400}
+
+/* FOOTER */
+footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:48px 5vw;text-align:center}
+.footer-brand{font-family:'Playfair Display',serif;font-size:24px;color:var(--blush);margin-bottom:12px}
+.footer-links{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-bottom:20px;list-style:none}
+.footer-links a{font-size:12px;color:rgba(255,255,255,.5);text-decoration:none;transition:color .15s}
+.footer-links a:hover{color:var(--blush)}
+.footer-disclosure{font-size:11px;color:rgba(255,255,255,.35);max-width:600px;margin:16px auto 0;line-height:1.6}
+
+@media(max-width:600px){
+  .nav-links{display:none}
+  .hero{min-height:70vh;padding:60px 5vw}
+}
+</style>
+</head>
+<body>
+
+<!-- AFFILIATE DISCLOSURE (required above fold) -->
+<div class="disclosure-bar">
+  As an Amazon Associate, GlowFuel earns from qualifying purchases. Prices are accurate at time of posting.
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-brand">GlowFuel</a>
+  <ul class="nav-links">
+    <li><a href="/30-day-plan.html">30-Day Plan</a></li>
+    <li><a href="/blog.html">Blog</a></li>
+    <li><a href="/shop.html">Shop Picks</a></li>
+    <li><a href="/tracker.html">Tracker</a></li>
+  </ul>
+  <a href="/30-day-plan.html" class="nav-cta">Start Free →</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">30-Day Transformation Plan</div>
+    <h1>Glow From<br>The <em>Inside</em> Out</h1>
+    <p class="hero-sub">The proven 30-day plan designed for women 25–50 who want a tighter waist and stronger glutes — with workouts, a full meal plan, and the exact products that accelerate results.</p>
+    <div class="hero-btns">
+      <a href="/30-day-plan.html" class="btn-primary">Start Your Free Plan →</a>
+      <a href="/shop.html" class="btn-ghost">Shop GlowFuel Picks</a>
+    </div>
+    <div class="hero-social-proof">
+      <span class="stars">★★★★★</span>
+      <span class="proof-text">Join 4,200+ women already on the GlowFuel plan</span>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div><div class="stat-num">30</div><div class="stat-label">Day Plan</div></div>
+  <div><div class="stat-num">8</div><div class="stat-label">Mins Daily</div></div>
+  <div><div class="stat-num">100%</div><div class="stat-label">Free to Start</div></div>
+  <div><div class="stat-num">2</div><div class="stat-label">Target Zones</div></div>
+</div>
+
+<!-- PLAN OVERVIEW -->
+<section>
+  <div class="section-inner">
+    <div class="eyebrow">The 30-Day GlowFuel Method</div>
+    <h2 class="section-title">Built around your body.<br>Designed for real results.</h2>
+    <p class="section-sub">Four progressive weeks that build on each other. No gym required. Just you, minimal equipment, and the plan.</p>
+    <div class="plan-grid">
+      <div class="plan-card">
+        <div class="plan-week">Week 1</div>
+        <h3>Activate</h3>
+        <p>Wake up the muscles that matter. Lay the foundation for waist and glute engagement.</p>
+        <ul>
+          <li>Glute bridges × 15</li>
+          <li>Romanian deadlifts × 12</li>
+          <li>Dead bug core holds × 10</li>
+        </ul>
+      </div>
+      <div class="plan-card">
+        <div class="plan-week">Week 2</div>
+        <h3>Build</h3>
+        <p>Increase resistance and range of motion. Introduce compound movements for full activation.</p>
+        <ul>
+          <li>Hip thrusts × 12</li>
+          <li>Sumo squats × 15</li>
+          <li>Bicycle crunches × 20</li>
+        </ul>
+      </div>
+      <div class="plan-card">
+        <div class="plan-week">Week 3</div>
+        <h3>Burn</h3>
+        <p>Elevate intensity with plyometric and circuit training to accelerate fat burn around the waist.</p>
+        <ul>
+          <li>Jump squats × 15</li>
+          <li>Donkey kicks × 20</li>
+          <li>Russian twists × 25</li>
+        </ul>
+      </div>
+      <div class="plan-card">
+        <div class="plan-week">Week 4</div>
+        <h3>Glow</h3>
+        <p>Full circuit training with progressive overload. Your body is ready — push further.</p>
+        <ul>
+          <li>Full circuit × 4 rounds</li>
+          <li>Progressive overload</li>
+          <li>Collagen + hydration protocol</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products-section">
+  <div class="section-inner">
+    <div class="eyebrow">GlowFuel Amazon Picks</div>
+    <h2 class="section-title">The tools that work.<br>Tested and approved.</h2>
+    <p class="section-sub">Everything below is what we actually recommend for the GlowFuel plan. Click any product to check the current price on Amazon.</p>
+    <div class="products-grid">
+      <div class="product-card">
+        <span class="product-emoji">🏋️</span>
+        <div class="product-tag">Most Popular</div>
+        <h3>Resistance Bands 5-Pack</h3>
+        <p>The foundation of the GlowFuel glute program. Progressive resistance for every fitness level.</p>
+        <a href="https://www.amazon.com/dp/B01AVDVHTI?tag=bossbusinessp-20" class="amazon-btn" rel="nofollow sponsored" target="_blank">Check Price on Amazon →</a>
+        <div class="amazon-note">Ad — affiliate link</div>
+      </div>
+      <div class="product-card">
+        <span class="product-emoji">🔥</span>
+        <div class="product-tag">Top Rated</div>
+        <h3>Sweet Sweat Waist Trimmer</h3>
+        <p>Enhances thermogenic activity during waist workouts. 57,000+ five-star reviews.</p>
+        <a href="https://www.amazon.com/dp/B00F8J9QKA?tag=bossbusinessp-20" class="amazon-btn" rel="nofollow sponsored" target="_blank">Check Price on Amazon →</a>
+        <div class="amazon-note">Ad — affiliate link</div>
+      </div>
+      <div class="product-card">
+        <span class="product-emoji">🧘</span>
+        <div class="product-tag">GlowFuel Essential</div>
+        <h3>Gaiam Thick Exercise Mat</h3>
+        <p>10mm cushioning for floor work, bridges, and all GlowFuel ground exercises.</p>
+        <a href="https://www.amazon.com/dp/B078NRQY2R?tag=bossbusinessp-20" class="amazon-btn" rel="nofollow sponsored" target="_blank">Check Price on Amazon →</a>
+        <div class="amazon-note">Ad — affiliate link</div>
+      </div>
+      <div class="product-card">
+        <span class="product-emoji">👗</span>
+        <div class="product-tag">Trending</div>
+        <h3>CRZ YOGA Butterlift Leggings</h3>
+        <p>No front seam, scrunch-butt design. The legging that shows off your glute progress.</p>
+        <a href="https://www.amazon.com/dp/B09TQDHX2K?tag=bossbusinessp-20" class="amazon-btn" rel="nofollow sponsored" target="_blank">Check Price on Amazon →</a>
+        <div class="amazon-note">Ad — affiliate link</div>
+      </div>
+      <div class="product-card">
+        <span class="product-emoji">⚡</span>
+        <div class="product-tag">Week 3 Upgrade</div>
+        <h3>VINSGUIR Ab Roller + Knee Pad</h3>
+        <p>Targets deep core and waist. Pairs perfectly with Week 3 of the GlowFuel plan.</p>
+        <a href="https://www.amazon.com/dp/B07PHBPWTR?tag=bossbusinessp-20" class="amazon-btn" rel="nofollow sponsored" target="_blank">Check Price on Amazon →</a>
+        <div class="amazon-note">Ad — affiliate link</div>
+      </div>
+      <div class="product-card">
+        <span class="product-emoji">💊</span>
+        <div class="product-tag">Supplement Pick</div>
+        <h3>Creatine for Women (Clean Nutra)</h3>
+        <p>With collagen, BCAA, and biotin — formulated specifically for women's body goals.</p>
+        <a href="https://www.amazon.com/s?k=creatine+for+women&tag=bossbusinessp-20" class="amazon-btn" rel="nofollow sponsored" target="_blank">Check Price on Amazon →</a>
+        <div class="amazon-note">Ad — affiliate link</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG PREVIEW -->
+<section>
+  <div class="section-inner">
+    <div class="eyebrow">GlowFuel Blog</div>
+    <h2 class="section-title">Daily fuel for<br>your transformation.</h2>
+    <p class="section-sub">New content every day aligned with the 30-day plan — recipes, workouts, gear reviews, and motivation.</p>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <div class="blog-img">🍑</div>
+        <div class="blog-body">
+          <div class="blog-date">Day 1</div>
+          <h3>Why Your Glutes Aren't Growing (And How to Fix It)</h3>
+          <p>The one activation mistake 90% of women make — and the exact band exercise that fixes it in week one.</p>
+          <a href="/blog.html" class="read-more">Read more →</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-img">🥗</div>
+        <div class="blog-body">
+          <div class="blog-date">Day 5</div>
+          <h3>What I Eat in a Day on the GlowFuel Plan</h3>
+          <p>A full day of eating that supports waist reduction and glute growth — with exact portions and prep tips.</p>
+          <a href="/blog.html" class="read-more">Read more →</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-img">💪</div>
+        <div class="blog-body">
+          <div class="blog-date">Day 10</div>
+          <h3>The Best Leggings for Glute Gains</h3>
+          <p>Not all leggings are created equal. These are the ones that actually support glute activation during workouts.</p>
+          <a href="/blog.html" class="read-more">Read more →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRACKER CTA -->
+<section class="tracker-section">
+  <h2>Track Every Day.<br>See Every Win.</h2>
+  <p>The GlowFuel 30-Day Fitness Tracker keeps you accountable and motivated. Choose the format that works for you.</p>
+  <div class="tracker-options">
+    <a href="/tracker#pdf" class="tracker-btn pdf">
+      🖨️ Printable PDF Tracker
+      <span class="tracker-price">$4.99 — print at home</span>
+    </a>
+    <a href="/tracker#digital" class="tracker-btn digital">
+      📱 Fillable Digital Planner
+      <span class="tracker-price">$9.99 — use on any device</span>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">GlowFuel</div>
+  <ul class="footer-links">
+    <li><a href="/30-day-plan.html">30-Day Plan</a></li>
+    <li><a href="/blog.html">Blog</a></li>
+    <li><a href="/shop.html">Shop</a></li>
+    <li><a href="/tracker.html">Tracker</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/affiliate-disclosure.html">Affiliate Disclosure</a></li>
+    <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+  </ul>
+  <div class="footer-disclosure">
+    GlowFuel is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. Amazon and the Amazon logo are trademarks of Amazon.com, Inc. Results may vary. Always consult your healthcare provider before starting a new fitness or nutrition program.
+  </div>
+</footer>
+
+</body>
+</html>
